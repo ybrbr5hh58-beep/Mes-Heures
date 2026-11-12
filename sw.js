@@ -1,8 +1,8 @@
 // Service worker : l'application fonctionne hors ligne une fois ouverte une première fois.
 // Les données (IndexedDB) ne sont jamais touchées par les mises à jour.
-const VERSION = 'd43c413a3f';
+const VERSION = 'cc8717101f';
 const CACHE = `mhe-${VERSION}`;
-const ASSETS = ["./","index.html","app-LEUZQDEV.js","app-SZYSGVOI.css","manifest.webmanifest","pdf.min.mjs","pdf.worker.min.mjs","apple-touch-icon.png","icon-192.png","icon-512.png","icon-maskable-512.png"];
+const ASSETS = ["./","index.html","app-57DULFEE.js","app-SZYSGVOI.css","manifest.webmanifest","pdf.min.mjs","pdf.worker.min.mjs","apple-touch-icon.png","icon-192.png","icon-512.png","icon-maskable-512.png"];
 
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(ASSETS)).then(() => self.skipWaiting()));
